@@ -247,6 +247,170 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/25/从零开始/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yang Fuqian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="知行合子">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/25/从零开始/" itemprop="url">
+                  从零开始
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-25T19:34:01+08:00">
+                2017-03-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="一、配置环境-参考链接"><a href="#一、配置环境-参考链接" class="headerlink" title="一、配置环境(参考链接)"></a>一、配置环境(<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">参考链接</a>)</h1><h2 id="1、安装Node-js和Git"><a href="#1、安装Node-js和Git" class="headerlink" title="1、安装Node.js和Git"></a>1、安装Node.js和Git</h2><ul>
+<li>Node.js 用于生成静态页面，而Git把本地的Hexo内容提交到github上去。</li>
+</ul>
+<h2 id="2、申请GitHub"><a href="#2、申请GitHub" class="headerlink" title="2、申请GitHub"></a>2、申请GitHub</h2><p>*用于博客的远程创库、域名、服务器。</p>
+<h2 id="3、安装Hexo"><a href="#3、安装Hexo" class="headerlink" title="3、安装Hexo"></a>3、安装Hexo</h2><ul>
+<li>创建一个文件夹，如blog, 在文件夹内右键之后点击 <em>Git Bash Here</em></li>
+<li>执行安装Hexo的命令：<code>npm install -g hexo</code></li>
+<li>初始化hexo： <code>hexo init</code></li>
+<li>检查是否成功：<br> 生成静态页面： <code>hexo generate(hexo g)</code><br> 本地启动：<code>hexo server</code></li>
+</ul>
+<h1 id="二、配置Github"><a href="#二、配置Github" class="headerlink" title="二、配置Github"></a>二、配置Github</h1><h2 id="1、建立仓库-Repository"><a href="#1、建立仓库-Repository" class="headerlink" title="1、建立仓库(Repository)"></a>1、建立仓库(Repository)</h2><ul>
+<li>建立仓库名为【name.github.io】</li>
+</ul>
+<h2 id="2、建立关联"><a href="#2、建立关联" class="headerlink" title="2、建立关联"></a>2、建立关联</h2><ul>
+<li><p>修改文件 <code>_config.yml</code> 最后面的内容为：</p>
+<pre><code>deploy:
+  type: git
+  repo: https://github.com/fuqiany/fuqiany.github.io.git
+  branch: master
+</code></pre></li>
+<li><p>执行命令：<code>install hexo-deployer-git --save</code></p>
+</li>
+<li>执行配置命令：<code>hexo d</code></li>
+</ul>
+<h1 id="三、部署步骤和常用命令"><a href="#三、部署步骤和常用命令" class="headerlink" title="三、部署步骤和常用命令"></a>三、部署步骤和常用命令</h1><h2 id="1、每次部署执行"><a href="#1、每次部署执行" class="headerlink" title="1、每次部署执行"></a>1、每次部署执行</h2><blockquote>
+<p>hexo c<br>hexo g<br>hexo d</p>
+</blockquote>
+<h2 id="2、一些常用命令"><a href="#2、一些常用命令" class="headerlink" title="2、一些常用命令"></a>2、一些常用命令</h2><ul>
+<li>新建文章 <code>hexo new &quot;postname&quot;</code></li>
+<li>新建页面 <code>hexo new page &quot;pagename&quot;</code></li>
+</ul>
+<h1 id="四、更换主题"><a href="#四、更换主题" class="headerlink" title="四、更换主题"></a>四、更换主题</h1><h2 id="1、下载"><a href="#1、下载" class="headerlink" title="1、下载"></a>1、下载</h2><ul>
+<li>执行命令：<code>git clone https://github.com/SuperKieran/TKL.git</code></li>
+<li>修改站点配置文件的theme属性：<code>theme: TKL</code></li>
+<li>更新主题：<code>cd themes/TKL</code>, <code>git pull</code></li>
+<li>Next主题：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">next</a></li>
+<li>主题合集：<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">themes</a></li>
+</ul>
+<h1 id="五、注意事项"><a href="#五、注意事项" class="headerlink" title="五、注意事项"></a>五、注意事项</h1><h2 id="1、文章中插入图片"><a href="#1、文章中插入图片" class="headerlink" title="1、文章中插入图片"></a>1、文章中插入图片</h2><ul>
+<li>在<strong>\hexo\source目录下</strong>新建文件夹，命名为images或者其他你喜欢的名字，然后编辑你的md博文，插入下面的代码样式：<br><code>![“图片描述”](/images/你的图片名字.JPG)</code></li>
+</ul>
+<h2 id="2、主题的头像修改"><a href="#2、主题的头像修改" class="headerlink" title="2、主题的头像修改"></a>2、主题的头像修改</h2><ul>
+<li>在相应位置插入代码(<strong>注意空格</strong>）：<br><code>avatar: /images/avatar.jpg</code></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/03/01/Matrix/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -654,318 +818,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/09/24/Self-Introduction/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yang Fuqian">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="知行合子">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/09/24/Self-Introduction/" itemprop="url">
-                  MarkDown test
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-09-24T19:34:01+08:00">
-                2015-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Welcome-to-MarkdownPad-2"><a href="#Welcome-to-MarkdownPad-2" class="headerlink" title="Welcome to MarkdownPad 2"></a>Welcome to MarkdownPad 2</h2><p><strong>MarkdownPad</strong> is a full-featured Markdown editor for Windows.</p>
-<h3 id="Built-exclusively-for-Markdown"><a href="#Built-exclusively-for-Markdown" class="headerlink" title="Built exclusively for Markdown"></a>Built exclusively for Markdown</h3><p>Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.</p>
-<p>Give them a try:</p>
-<ul>
-<li><strong>Bold</strong> (<code>Ctrl+B</code>) and <em>Italic</em> (<code>Ctrl+I</code>)</li>
-<li>Quotes (<code>Ctrl+Q</code>)</li>
-<li>Code blocks (<code>Ctrl+K</code>)</li>
-<li>Headings 1, 2, 3 (<code>Ctrl+1</code>, <code>Ctrl+2</code>, <code>Ctrl+3</code>)</li>
-<li>Lists (<code>Ctrl+U</code> and <code>Ctrl+Shift+O</code>)</li>
-</ul>
-<h3 id="See-your-changes-instantly-with-LivePreview"><a href="#See-your-changes-instantly-with-LivePreview" class="headerlink" title="See your changes instantly with LivePreview"></a>See your changes instantly with LivePreview</h3><p>Don’t guess if your <a href="http://markdownpad.com" target="_blank" rel="external">hyperlink syntax</a> is correct; LivePreview will show you exactly what your document looks like every time you press a key.</p>
-<h3 id="Make-it-your-own"><a href="#Make-it-your-own" class="headerlink" title="Make it your own"></a>Make it your own</h3><p>Fonts, color schemes, layouts and stylesheets are all 100% customizable so you can turn MarkdownPad into your perfect editor.</p>
-<h3 id="A-robust-editor-for-advanced-Markdown-users"><a href="#A-robust-editor-for-advanced-Markdown-users" class="headerlink" title="A robust editor for advanced Markdown users"></a>A robust editor for advanced Markdown users</h3><p>MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.</p>
-<p>With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there’s no limit to what you can do with MarkdownPad.</p>
-<h2 id="Welcome-to-MarkdownPad-2-1"><a href="#Welcome-to-MarkdownPad-2-1" class="headerlink" title="Welcome to MarkdownPad 2"></a>Welcome to MarkdownPad 2</h2><p><strong>MarkdownPad</strong> is a full-featured Markdown editor for Windows.</p>
-<h3 id="Built-exclusively-for-Markdown-1"><a href="#Built-exclusively-for-Markdown-1" class="headerlink" title="Built exclusively for Markdown"></a>Built exclusively for Markdown</h3><p>Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.</p>
-<p>Give them a try:</p>
-<ul>
-<li><strong>Bold</strong> (<code>Ctrl+B</code>) and <em>Italic</em> (<code>Ctrl+I</code>)</li>
-<li>Quotes (<code>Ctrl+Q</code>)</li>
-<li>Code blocks (<code>Ctrl+K</code>)</li>
-<li>Headings 1, 2, 3 (<code>Ctrl+1</code>, <code>Ctrl+2</code>, <code>Ctrl+3</code>)</li>
-<li>Lists (<code>Ctrl+U</code> and <code>Ctrl+Shift+O</code>)</li>
-</ul>
-<h3 id="See-your-changes-instantly-with-LivePreview-1"><a href="#See-your-changes-instantly-with-LivePreview-1" class="headerlink" title="See your changes instantly with LivePreview"></a>See your changes instantly with LivePreview</h3><p>Don’t guess if your <a href="http://markdownpad.com" target="_blank" rel="external">hyperlink syntax</a> is correct; LivePreview will show you exactly what your document looks like every time you press a key.</p>
-<h3 id="Make-it-your-own-1"><a href="#Make-it-your-own-1" class="headerlink" title="Make it your own"></a>Make it your own</h3><p>Fonts, color schemes, layouts and stylesheets are all 100% customizable so you can turn MarkdownPad into your perfect editor.</p>
-<h3 id="A-robust-editor-for-advanced-Markdown-users-1"><a href="#A-robust-editor-for-advanced-Markdown-users-1" class="headerlink" title="A robust editor for advanced Markdown users"></a>A robust editor for advanced Markdown users</h3><p>MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.</p>
-<p>With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there’s no limit to what you can do with MarkdownPad.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/09/24/从零开始/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yang Fuqian">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="知行合子">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/09/24/从零开始/" itemprop="url">
-                  从零开始
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-09-24T19:34:01+08:00">
-                2015-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="一、配置环境-参考链接"><a href="#一、配置环境-参考链接" class="headerlink" title="一、配置环境(参考链接)"></a>一、配置环境(<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">参考链接</a>)</h1><h2 id="1、安装Node-js和Git"><a href="#1、安装Node-js和Git" class="headerlink" title="1、安装Node.js和Git"></a>1、安装Node.js和Git</h2><ul>
-<li>Node.js 用于生成静态页面，而Git把本地的Hexo内容提交到github上去。</li>
-</ul>
-<h2 id="2、申请GitHub"><a href="#2、申请GitHub" class="headerlink" title="2、申请GitHub"></a>2、申请GitHub</h2><p>*用于博客的远程创库、域名、服务器。</p>
-<h2 id="3、安装Hexo"><a href="#3、安装Hexo" class="headerlink" title="3、安装Hexo"></a>3、安装Hexo</h2><ul>
-<li>创建一个文件夹，如blog, 在文件夹内右键之后点击 <em>Git Bash Here</em></li>
-<li>执行安装Hexo的命令：<code>npm install -g hexo</code></li>
-<li>初始化hexo： <code>hexo init</code></li>
-<li>检查是否成功：<br> 生成静态页面： <code>hexo generate(hexo g)</code><br> 本地启动：<code>hexo server</code></li>
-</ul>
-<h1 id="二、配置Github"><a href="#二、配置Github" class="headerlink" title="二、配置Github"></a>二、配置Github</h1><h2 id="1、建立仓库-Repository"><a href="#1、建立仓库-Repository" class="headerlink" title="1、建立仓库(Repository)"></a>1、建立仓库(Repository)</h2><ul>
-<li>建立仓库名为【name.github.io】</li>
-</ul>
-<h2 id="2、建立关联"><a href="#2、建立关联" class="headerlink" title="2、建立关联"></a>2、建立关联</h2><ul>
-<li><p>修改文件 <code>_config.yml</code> 最后面的内容为：</p>
-<pre><code>deploy:
-  type: git
-  repo: https://github.com/fuqiany/fuqiany.github.io.git
-  branch: master
-</code></pre></li>
-<li><p>执行命令：<code>install hexo-deployer-git --save</code></p>
-</li>
-<li>执行配置命令：<code>hexo d</code></li>
-</ul>
-<h1 id="三、部署步骤和常用命令"><a href="#三、部署步骤和常用命令" class="headerlink" title="三、部署步骤和常用命令"></a>三、部署步骤和常用命令</h1><h2 id="1、每次部署执行"><a href="#1、每次部署执行" class="headerlink" title="1、每次部署执行"></a>1、每次部署执行</h2><blockquote>
-<p>hexo c<br>hexo g<br>hexo d</p>
-</blockquote>
-<h2 id="2、一些常用命令"><a href="#2、一些常用命令" class="headerlink" title="2、一些常用命令"></a>2、一些常用命令</h2><ul>
-<li>新建文章 <code>hexo new &quot;postname&quot;</code></li>
-<li>新建页面 <code>hexo new page &quot;pagename&quot;</code></li>
-</ul>
-<h1 id="四、更换主题"><a href="#四、更换主题" class="headerlink" title="四、更换主题"></a>四、更换主题</h1><h2 id="1、下载"><a href="#1、下载" class="headerlink" title="1、下载"></a>1、下载</h2><ul>
-<li>执行命令：<code>git clone https://github.com/SuperKieran/TKL.git</code></li>
-<li>修改站点配置文件的theme属性：<code>theme: TKL</code></li>
-<li>更新主题：<code>cd themes/TKL</code>, <code>git pull</code></li>
-<li>Next主题：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">next</a></li>
-<li>主题合集：<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">themes</a></li>
-</ul>
-<h1 id="五、注意事项"><a href="#五、注意事项" class="headerlink" title="五、注意事项"></a>五、注意事项</h1><h2 id="1、文章中插入图片"><a href="#1、文章中插入图片" class="headerlink" title="1、文章中插入图片"></a>1、文章中插入图片</h2><ul>
-<li>在<strong>\hexo\source目录下</strong>新建文件夹，命名为images或者其他你喜欢的名字，然后编辑你的md博文，插入下面的代码样式：<br><code>![“图片描述”](/images/你的图片名字.JPG)</code></li>
-</ul>
-<h2 id="2、主题的头像修改"><a href="#2、主题的头像修改" class="headerlink" title="2、主题的头像修改"></a>2、主题的头像修改</h2><ul>
-<li>在相应位置插入代码(<strong>注意空格</strong>）：<code>avatar: /images/avatar.jpg</code></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/09/24/Test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1086,6 +938,154 @@
 &lt;p&gt;For example.&lt;/p&gt;
 &lt;/blockquote&gt;
 </code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/09/24/Self-Introduction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yang Fuqian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="知行合子">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/09/24/Self-Introduction/" itemprop="url">
+                  MarkDown test
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-09-24T19:34:01+08:00">
+                2015-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Welcome-to-MarkdownPad-2"><a href="#Welcome-to-MarkdownPad-2" class="headerlink" title="Welcome to MarkdownPad 2"></a>Welcome to MarkdownPad 2</h2><p><strong>MarkdownPad</strong> is a full-featured Markdown editor for Windows.</p>
+<h3 id="Built-exclusively-for-Markdown"><a href="#Built-exclusively-for-Markdown" class="headerlink" title="Built exclusively for Markdown"></a>Built exclusively for Markdown</h3><p>Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.</p>
+<p>Give them a try:</p>
+<ul>
+<li><strong>Bold</strong> (<code>Ctrl+B</code>) and <em>Italic</em> (<code>Ctrl+I</code>)</li>
+<li>Quotes (<code>Ctrl+Q</code>)</li>
+<li>Code blocks (<code>Ctrl+K</code>)</li>
+<li>Headings 1, 2, 3 (<code>Ctrl+1</code>, <code>Ctrl+2</code>, <code>Ctrl+3</code>)</li>
+<li>Lists (<code>Ctrl+U</code> and <code>Ctrl+Shift+O</code>)</li>
+</ul>
+<h3 id="See-your-changes-instantly-with-LivePreview"><a href="#See-your-changes-instantly-with-LivePreview" class="headerlink" title="See your changes instantly with LivePreview"></a>See your changes instantly with LivePreview</h3><p>Don’t guess if your <a href="http://markdownpad.com" target="_blank" rel="external">hyperlink syntax</a> is correct; LivePreview will show you exactly what your document looks like every time you press a key.</p>
+<h3 id="Make-it-your-own"><a href="#Make-it-your-own" class="headerlink" title="Make it your own"></a>Make it your own</h3><p>Fonts, color schemes, layouts and stylesheets are all 100% customizable so you can turn MarkdownPad into your perfect editor.</p>
+<h3 id="A-robust-editor-for-advanced-Markdown-users"><a href="#A-robust-editor-for-advanced-Markdown-users" class="headerlink" title="A robust editor for advanced Markdown users"></a>A robust editor for advanced Markdown users</h3><p>MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.</p>
+<p>With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there’s no limit to what you can do with MarkdownPad.</p>
+<h2 id="Welcome-to-MarkdownPad-2-1"><a href="#Welcome-to-MarkdownPad-2-1" class="headerlink" title="Welcome to MarkdownPad 2"></a>Welcome to MarkdownPad 2</h2><p><strong>MarkdownPad</strong> is a full-featured Markdown editor for Windows.</p>
+<h3 id="Built-exclusively-for-Markdown-1"><a href="#Built-exclusively-for-Markdown-1" class="headerlink" title="Built exclusively for Markdown"></a>Built exclusively for Markdown</h3><p>Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.</p>
+<p>Give them a try:</p>
+<ul>
+<li><strong>Bold</strong> (<code>Ctrl+B</code>) and <em>Italic</em> (<code>Ctrl+I</code>)</li>
+<li>Quotes (<code>Ctrl+Q</code>)</li>
+<li>Code blocks (<code>Ctrl+K</code>)</li>
+<li>Headings 1, 2, 3 (<code>Ctrl+1</code>, <code>Ctrl+2</code>, <code>Ctrl+3</code>)</li>
+<li>Lists (<code>Ctrl+U</code> and <code>Ctrl+Shift+O</code>)</li>
+</ul>
+<h3 id="See-your-changes-instantly-with-LivePreview-1"><a href="#See-your-changes-instantly-with-LivePreview-1" class="headerlink" title="See your changes instantly with LivePreview"></a>See your changes instantly with LivePreview</h3><p>Don’t guess if your <a href="http://markdownpad.com" target="_blank" rel="external">hyperlink syntax</a> is correct; LivePreview will show you exactly what your document looks like every time you press a key.</p>
+<h3 id="Make-it-your-own-1"><a href="#Make-it-your-own-1" class="headerlink" title="Make it your own"></a>Make it your own</h3><p>Fonts, color schemes, layouts and stylesheets are all 100% customizable so you can turn MarkdownPad into your perfect editor.</p>
+<h3 id="A-robust-editor-for-advanced-Markdown-users-1"><a href="#A-robust-editor-for-advanced-Markdown-users-1" class="headerlink" title="A robust editor for advanced Markdown users"></a>A robust editor for advanced Markdown users</h3><p>MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.</p>
+<p>With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there’s no limit to what you can do with MarkdownPad.</p>
+
           
         
       
