@@ -1041,9 +1041,30 @@
       
         
           
-            <h1 id="配置环境-参考链接"><a href="#配置环境-参考链接" class="headerlink" title="配置环境(参考链接)"></a>配置环境(<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">参考链接</a>)</h1><h2 id="安装Node-js和Git"><a href="#安装Node-js和Git" class="headerlink" title="安装Node.js和Git"></a>安装Node.js和Git</h2><p>Node.js 用于生成静态页面，而Git把本地的Hexo内容提交到github上去。</p>
-<h2 id="申请GitHub"><a href="#申请GitHub" class="headerlink" title="申请GitHub"></a>申请GitHub</h2><p>用于博客的远程创库、域名、服务器。</p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h3 id="创建一个文件夹，如blog-在文件夹内右键之后点击-Git-Bash-Here"><a href="#创建一个文件夹，如blog-在文件夹内右键之后点击-Git-Bash-Here" class="headerlink" title="创建一个文件夹，如blog, 在文件夹内右键之后点击 Git Bash Here"></a>创建一个文件夹，如blog, 在文件夹内右键之后点击 <em>Git Bash Here</em></h3><h3 id="执行安装Hexo的命令：npm-install-g-hexo"><a href="#执行安装Hexo的命令：npm-install-g-hexo" class="headerlink" title="执行安装Hexo的命令：npm install -g hexo"></a>执行安装Hexo的命令：<code>npm install -g hexo</code></h3><h3 id="初始化hexo：-hexo-init"><a href="#初始化hexo：-hexo-init" class="headerlink" title="初始化hexo： hexo init"></a>初始化hexo： <code>hexo init</code></h3><h3 id="检查是否成功："><a href="#检查是否成功：" class="headerlink" title="检查是否成功："></a>检查是否成功：</h3><h4 id="生成静态页面：-hexo-generate-hexo-g"><a href="#生成静态页面：-hexo-generate-hexo-g" class="headerlink" title="生成静态页面： hexo generate(hexo g)"></a>生成静态页面： <code>hexo generate(hexo g)</code></h4><h4 id="本地启动：hexo-server"><a href="#本地启动：hexo-server" class="headerlink" title="本地启动：hexo server"></a>本地启动：<code>hexo server</code></h4><p>The quick brown fox jumped over the lazy dog’s back.</p>
+            <h1 id="一、配置环境-参考链接"><a href="#一、配置环境-参考链接" class="headerlink" title="一、配置环境(参考链接)"></a>一、配置环境(<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">参考链接</a>)</h1><h2 id="1、安装Node-js和Git"><a href="#1、安装Node-js和Git" class="headerlink" title="1、安装Node.js和Git"></a>1、安装Node.js和Git</h2><p>Node.js 用于生成静态页面，而Git把本地的Hexo内容提交到github上去。</p>
+<h2 id="2、申请GitHub"><a href="#2、申请GitHub" class="headerlink" title="2、申请GitHub"></a>2、申请GitHub</h2><p>用于博客的远程创库、域名、服务器。</p>
+<h2 id="3、安装Hexo"><a href="#3、安装Hexo" class="headerlink" title="3、安装Hexo"></a>3、安装Hexo</h2><ul>
+<li>创建一个文件夹，如blog, 在文件夹内右键之后点击 <em>Git Bash Here</em></li>
+<li>执行安装Hexo的命令：<code>npm install -g hexo</code></li>
+<li>初始化hexo： <code>hexo init</code></li>
+<li>检查是否成功：<br> 生成静态页面： <code>hexo generate(hexo g)</code><br> 本地启动：<code>hexo server</code><h1 id="二、配置Github"><a href="#二、配置Github" class="headerlink" title="二、配置Github"></a>二、配置Github</h1></li>
+</ul>
+<h2 id="1、建立仓库-Repository"><a href="#1、建立仓库-Repository" class="headerlink" title="1、建立仓库(Repository)"></a>1、建立仓库(Repository)</h2><p>建立仓库名为【name.github.io】</p>
+<h2 id="2、建立关联"><a href="#2、建立关联" class="headerlink" title="2、建立关联"></a>2、建立关联</h2><ul>
+<li>修改文件 <code>_config.yml</code> 最后面的内容为：<br><code>deploy:
+type: git
+repo: https://github.com/fuqiany/fuqiany.github.io.git
+branch: master</code></li>
+<li><p>执行命令：<code>install hexo-deployer-git --save</code></p>
+</li>
+<li><p>执行配置命令：<code>hexo d</code></p>
+</li>
+</ul>
+<h1 id="三、部署步骤和常用命令"><a href="#三、部署步骤和常用命令" class="headerlink" title="三、部署步骤和常用命令"></a>三、部署步骤和常用命令</h1><h2 id="1、每次部署执行"><a href="#1、每次部署执行" class="headerlink" title="1、每次部署执行"></a>1、每次部署执行</h2><blockquote>
+<p>hexo c<br>hexo g</p>
+<p>hexo d</p>
+</blockquote>
+<p>The quick brown fox jumped over the lazy dog’s back.</p>
 <h1 id="Header1"><a href="#Header1" class="headerlink" title="Header1"></a>Header1</h1><h2 id="Header2"><a href="#Header2" class="headerlink" title="Header2"></a>Header2</h2><h2 id="Header3"><a href="#Header3" class="headerlink" title="Header3"></a>Header3</h2><h6 id="header6"><a href="#header6" class="headerlink" title="header6"></a>header6</h6><blockquote>
 <p>This is a blockquote</p>
 <p>This is second paragraph in the blockquote</p>
