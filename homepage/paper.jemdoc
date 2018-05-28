@@ -1,0 +1,16 @@
+# jemdoc: menu{MENU}{paper.html}
+== Publications
+
+
+=== Journal Publications:
+. \[JP03\] *F. Yang*, /et. al/, "Decomposition of Complex Interconnection Networks for Massive MIMO Self-Calibration," to be submitted.
+. \[JP02\] H. Zhu, *F. Yang*, Z. Zhu, and X. Luo, "Interconnection Strategies for Self-Calibration of Large Scale Antenna Arrays," IEEE Transactions on Signal Processing, (in the revision).
+. \[JP01\] *F. Yang*, P. Cai, H. Qian, and X. Luo, "Pilot Contamination in Massive MIMO Induced by Timing and Frequency Errors," IEEE Transactions on Wireless Communications, (revised in December, 2017) \[[PDF]\].
+
+=== Publications in Conference Proceedings:
+. \[C05\] *F. Yang*, H. Zhu, C. Shen, L. Dai, and X. Luo, "How to Interconnect for Massive MIMO Self-Calibration?" in Proc. IEEE ICASSP, Calgary, Alberta, Canada, April 15--20, 2018.
+. \[C04\] H. Zhu, *F. Yang*, Z. Zhu, and X. Luo, "Optimal Interconnection for Massive MIMO Self-Calibration," in Proc. IEEE ICC, Kansas City, MO, USA, May 20--24, 2018.
+. \[C03\] *F. Yang*, X. Zhang, P. Cai, and X. Luo, "Massive MIMO Performance with Timing \& Frequency Errors," in Proc. IEEE GlobalSIP, Montreal, Canada, November, 14--16, 2017.
+. \[C02\] P. Cai, *F. Yang*, X. Zhang, S. Tomasin, and X. Luo, "Aligning or Not Aligning in Massive MIMO Downlink?" in Proc. IEEE GlobalSIP, Montreal, Canada, November 14--16, 2017.
+. \[C01\] X. Luo, X. Zhang, P. Cai, and *F. Yang*, "Pilot Decontamination via Doppler PSD Alignement," in Proc. IEEE GlobalSIP, Washington D.C., USA, Dec. 7--9, 2016.
+
